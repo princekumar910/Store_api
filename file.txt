@@ -1,0 +1,27 @@
+in which we can try to take comapany name from user ,
+if it exist , then add it item , if not then make a new company name  
+{name : {$regex : name , $options : 'i'}};     // these will help to search partial name with case sensitive
+
+
+to send the data in the sorted list whether use send it or not
+let sortList = 'name';
+if(sort){
+    sortList = sort.split(',').join(' ') ;
+}
+
+
+to send only that which user asked for it otherwise add all the field
+let fieldList  ;
+if(fields){
+    fieldList = fields.split(',').join(' ');
+    console.log(fieldList);
+}
+with function .select 
+
+
+to numericfilters here we 
+1. we replace < , > symbol with gt , lt etc 
+2. we split using , get all numeric features like rating , price ,
+3. destrunce the data and put into query string
+
+
